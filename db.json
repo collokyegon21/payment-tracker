@@ -1,0 +1,90 @@
+{
+  "purchases": [
+    {
+      "id": "2",
+      "name": "Plot of Land",
+      "category": "Land",
+      "seller": "Amco Properties",
+      "totalAmount": 350000,
+      "startDate": "2026-08-01",
+      "dueDate": "2026-08-01",
+      "frequency": "Monthly",
+      "createdAt": "2026-08-01T09:00:00.000Z"
+    },
+    {
+      "name": "Subaru Impreza",
+      "category": "Vehicle",
+      "seller": "Al Hussein Motors",
+      "totalAmount": 1500000,
+      "startDate": "2026-11-18",
+      "dueDate": "2027-02-08",
+      "frequency": "Monthly",
+      "createdAt": "2026-11-18T15:00:29.699Z",
+      "id": "PBNR1PuUbAI"
+    },
+    {
+      "name": "Samsung S26 Ultra",
+      "category": "Phone & Electronics",
+      "seller": "Phone Palace",
+      "totalAmount": 128000,
+      "startDate": "2026-11-18",
+      "dueDate": "2027-01-29",
+      "frequency": "Monthly",
+      "createdAt": "2026-11-18T15:08:56.836Z",
+      "id": "RDto4LADHvk",
+      "reviewed": true
+    },
+    {
+      "name": "Land",
+      "category": "Land",
+      "seller": "Kokwon",
+      "totalAmount": 5000000,
+      "startDate": "2026-11-18",
+      "dueDate": "2026-11-30",
+      "frequency": "Daily",
+      "createdAt": "2026-11-18T19:59:03.660Z",
+      "id": "nFpJMC8V5Wc"
+    },
+    {
+      "name": "Samsung S26 Ultra",
+      "category": "Phone & Electronics",
+      "seller": "Phone Palace",
+      "totalAmount": 180000,
+      "startDate": "2026-11-18",
+      "dueDate": "2026-11-19",
+      "frequency": "Daily",
+      "createdAt": "2026-11-18T19:59:32.690Z",
+      "id": "83XblkpzfAc"
+    }
+  ],
+  "payments": [
+    {
+      "id": "3",
+      "purchaseId": "2",
+      "amount": 50000,
+      "date": "2026-09-01",
+      "method": "Bank Transfer",
+      "reference": "",
+      "notes": "Deposit"
+    },
+    {
+      "amount": 150000,
+      "date": "2026-11-18",
+      "method": "Cash",
+      "reference": "Cash",
+      "notes": "paid Cash",
+      "purchaseId": "2",
+      "id": "v-2A3Sb7ulc"
+    },
+    {
+      "amount": 128000,
+      "date": "2026-11-18",
+      "method": "M-Pesa",
+      "reference": "MPESA",
+      "notes": "",
+      "purchaseId": "RDto4LADHvk",
+      "id": "fZurWZRPoU8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
