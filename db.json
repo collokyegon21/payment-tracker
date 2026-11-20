@@ -44,17 +44,6 @@
       "frequency": "Daily",
       "createdAt": "2026-11-18T19:59:03.660Z",
       "id": "nFpJMC8V5Wc"
-    },
-    {
-      "name": "Samsung S26 Ultra",
-      "category": "Phone & Electronics",
-      "seller": "Phone Palace",
-      "totalAmount": 180000,
-      "startDate": "2026-11-18",
-      "dueDate": "2026-11-19",
-      "frequency": "Daily",
-      "createdAt": "2026-11-18T19:59:32.690Z",
-      "id": "83XblkpzfAc"
     }
   ],
   "payments": [

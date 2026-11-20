@@ -42,7 +42,7 @@ export default function Features() {
     <section id="features" className="py-5 bg-gray-100">
       <div className="container py-5">
         <div className="text-center mb-5">
-          <span className="text-primary fw-semibold">FEATURES</span>
+          <span className="text-primary fw-bold">FEATURES</span>
 
           <h2 className="fw-bold display-6 mt-2">
             Everything You Need to Stay on Track
@@ -57,7 +57,7 @@ export default function Features() {
         <div className="row g-4">
           {features.map((feature) => (
             <div className="col-md-6 col-lg-4" key={feature.title}>
-              <div className="feature-card h-100 p-4 rounded-4">
+              <div className="card h-100 p-4 rounded-4">
                 <div className="feature-icon mb-4">
                   <i className={`bi ${feature.icon}`}></i>
                 </div>

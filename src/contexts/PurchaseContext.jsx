@@ -15,7 +15,6 @@ export function PurchaseProvider({ children }) {
   const [purchases, setPurchases] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  
   async function loadData() {
     try {
       const [purchaseData, paymentData] = await Promise.all([
@@ -31,8 +30,8 @@ export function PurchaseProvider({ children }) {
       }));
 
       setPurchases(purchasesWithPayments);
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
     } finally {
       setLoading(false);
     }
@@ -42,7 +41,6 @@ export function PurchaseProvider({ children }) {
     loadData();
   }, []);
 
-  // POST
   async function addPurchase(formData) {
     const newPurchase = {
       ...formData,
@@ -53,7 +51,6 @@ export function PurchaseProvider({ children }) {
     await loadData();
   }
 
-  // POST
   async function addPayment(purchaseId, formData) {
     const payment = {
       ...formData,
@@ -64,13 +61,11 @@ export function PurchaseProvider({ children }) {
     await loadData();
   }
 
-  // PATCH
   async function editPurchase(id, updates) {
     await updatePurchase(id, updates);
     await loadData();
   }
 
-  // DELETE purchase and its related payment records.
   async function removePurchase(id) {
     const purchase = purchases.find((item) => String(item.id) === String(id));
     if (purchase) {
@@ -82,7 +77,6 @@ export function PurchaseProvider({ children }) {
     await loadData();
   }
 
-  // DELETE an individual payment.
   async function removePayment(id) {
     await deletePaymentRequest(id);
     await loadData();

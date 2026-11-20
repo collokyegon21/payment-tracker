@@ -7,18 +7,16 @@ async function request(endpoint, options = {}) {
   });
 
   if (!response.ok) {
-    throw new Error(`API request failed: ${response.status}`);
+    throw new Error(` ${response.status}`);
   }
 
   if (response.status === 204) return null;
   return response.json();
 }
 
-// GET
 export const getPurchases = () => request("/purchases");
 export const getPayments = () => request("/payments");
 
-// POST
 export const createPurchase = (data) =>
   request("/purchases", {
     method: "POST",
@@ -31,14 +29,12 @@ export const createPayment = (data) =>
     body: JSON.stringify(data),
   });
 
-// PATCH
 export const updatePurchase = (id, data) =>
   request(`/purchases/${id}`, {
     method: "PATCH",
     body: JSON.stringify(data),
   });
 
-// DELETE
 export const deletePurchaseRequest = (id) =>
   request(`/purchases/${id}`, { method: "DELETE" });
 

@@ -1,8 +1,8 @@
-import NavBar from "../components/NavBar";
-import HeroSection from "../components/HeroSection";
-import Features from "../components/Features";
-import HowItWorks from "../components/HowItWorks";
-import Footer from "../components/Footer";
+import NavBar from "../components/landing/NavBar";
+import HeroSection from "../components/landing/HeroSection";
+import Features from "../components/landing/Features";
+import HowItWorks from "../components/landing/HowItWorks";
+import Footer from "../components/landing/Footer";
 
 export default function Landing() {
   return (

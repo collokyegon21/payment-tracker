@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-const initialForm = {
-  name: "",
-  category: "Land",
-  seller: "",
-  totalAmount: "",
-  startDate: new Date().toISOString().slice(0, 10),
-  dueDate: "",
-  frequency: "Monthly",
-};
-
 export default function PurchaseForm({ onSubmit }) {
+  const initialForm = {
+    name: "",
+    category: "Land",
+    seller: "",
+    totalAmount: "",
+    startDate: new Date().toISOString().slice(0, 10),
+    dueDate: "",
+    frequency: "Monthly",
+  };
+
   const [form, setForm] = useState(initialForm);
 
   function handleChange(event) {
@@ -34,7 +34,7 @@ export default function PurchaseForm({ onSubmit }) {
           name="name"
           value={form.name}
           onChange={handleChange}
-          placeholder="e.g. Toyota Axio"
+          placeholder="e.g Land "
           required
         />
       </div>
@@ -62,7 +62,7 @@ export default function PurchaseForm({ onSubmit }) {
           </select>
         </div>
         <div className="col-md-6 mb-3">
-          <label className="form-label">Seller / Company</label>
+          <label className="form-label">Seller</label>
           <input
             className="form-control"
             name="seller"
@@ -127,7 +127,7 @@ export default function PurchaseForm({ onSubmit }) {
       </div>
 
       <button className="btn btn-primary" type="submit">
-        Create payment plan
+        Add New Purchase
       </button>
     </form>
   );

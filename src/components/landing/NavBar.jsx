@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Navbar() {
             {links.map((link, index) => (
               <li className="nav-item" key={link.href}>
                 <a
-                  className={`nav-link ${index === 0 ? "active" : ""}`}
+                  className={`nav-link ${index === 0 ? "active nav-underline" : ""}`}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -44,6 +45,11 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+
+            <Link to={"/login"} className="btn btn-primary">
+              {" "}
+              Login
+            </Link>
           </ul>
         </div>
       </div>

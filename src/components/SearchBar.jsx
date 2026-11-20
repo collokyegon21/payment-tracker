@@ -3,7 +3,7 @@ export default function SearchBar({ search, onSearch }) {
     <input
       className="form-control"
       type="search"
-      placeholder="Search purchases..."
+      placeholder="Search purchases"
       value={search}
       onChange={(event) => onSearch(event.target.value)}
     />

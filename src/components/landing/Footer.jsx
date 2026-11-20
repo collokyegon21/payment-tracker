@@ -7,14 +7,6 @@ export default function Footer() {
     { label: "How It Works", href: "#how-it-works" },
   ];
 
-  const socials = [
-    { icon: "bi-twitter-x", href: "#", label: "X" },
-    { icon: "bi-linkedin", href: "#", label: "LinkedIn" },
-    { icon: "bi-github", href: "#", label: "GitHub" },
-  ];
-
-  const circle = { width: 36, height: 36 };
-
   return (
     <footer id="about" className="bg-dark text-white pt-5">
       <div className="container">
@@ -31,20 +23,6 @@ export default function Footer() {
               Making instalment payment tracking simple, organised and
               transparent.
             </p>
-
-            <div className="d-flex gap-2">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  className="btn btn-outline-light rounded-circle d-inline-flex align-items-center justify-content-center p-0"
-                  style={circle}
-                  aria-label={s.label}
-                >
-                  <i className={`bi ${s.icon}`}></i>
-                </a>
-              ))}
-            </div>
           </div>
 
           <nav className="col-6 col-lg-3 offset-lg-1" aria-label="Footer">
